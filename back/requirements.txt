@@ -1,2 +1,2 @@
 fastapi
-datetime
+uvicorn[standard]

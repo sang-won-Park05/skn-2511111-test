@@ -5,8 +5,7 @@ app = FastAPI()
 
 @app.get("/health", status_code=200)
 def health_check():
-
     return {
         "status": "ok",
-        "dttm": today.starttime("%Y-%m-%d %H:%M:%S")
+        "dttm": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
